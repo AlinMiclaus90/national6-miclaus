@@ -12,6 +12,10 @@ const minutesParagraphs = document.querySelectorAll(".minutes p");
 let hours = 0;
 const hoursParagraphs = document.querySelectorAll(".hours p");
 
+document.getElementById("print-time").addEventListener("click", function () {
+  console.log("The time is:", `${hours}:${minutes}:${seconds}`);
+});
+
 setInterval(function () {
   renderDigits(seconds, secondsParagraphs);
   renderDigits(minutes, minutesParagraphs);
