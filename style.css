@@ -1,3 +1,7 @@
-.red-paragraph {
-  color: red;
+.digital-clock {
+  display: flex;
+}
+
+.digital-clock > div {
+  display: flex;
 }
